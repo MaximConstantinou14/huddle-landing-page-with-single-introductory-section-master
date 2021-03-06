@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins' , sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    max-width: 20%;
+    margin-left: 4rem;
+}
+
+.logo{
+    height: 2rem;
+    width: 4rem;
+    margin: 1.5rem 0rem 3rem 0rem;
+}
+
+main{
+    display: flex;
+    margin: 2rem 4rem 0rem 4rem;
+    color: white;
+}
+
+section{
+    margin: 2rem 1rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 4rem;
+}
+
+.description{
+    margin-bottom: 2rem;
+}
+
+button{
+    padding: 1rem 4rem;
+    border-radius: 50px;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    -webkit-box-shadow: 2px 5px 24px 3px rgba(0,0,0,0.39); 
+    box-shadow: 2px 5px 24px 3px rgba(0,0,0,0.39);
+}
+
+button:hover{
+    padding: 1rem 4rem;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    margin: 0rem 4.3rem ;
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    header{
+        margin-top: 2rem;
+    }
+
+    .image{
+        margin-top: 4rem;
+    }
+
+    .picture{
+        width: 35rem;
+        height: auto;
+        margin-right: 4rem;
+    }
+
+    section{
+        margin: 0;
+        width: 40rem;
+        text-align:center ;
+    }
+
+    .title{
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 4rem;
+        max-width: 30rem;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .description{
+        font-size: 2rem;
+        margin-right: 4rem;
+    }
+
+    button{
+        margin-right: 4rem;
+        padding: 3rem 12rem;
+        border-radius: 80px;
+        font-size: 2rem;
+    }
+
+}
+
